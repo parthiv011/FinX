@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { InfoSection } from "../components/features/InfoSection";
 import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";
@@ -17,7 +18,7 @@ export const Login = () => {
         <Input placeholder="Enter password" type="password" aria-required />
         <Button type="submit" buttonTitle="Sign Up" />
         <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
-        <a href="" >Don't have an account?</a>
+        <Link to={"/signup"}>Don't have an account?</Link>
       </form>
       </div>
     </div>
